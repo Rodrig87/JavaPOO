@@ -11,7 +11,7 @@ public class Cidades {
 				
 		System.out.println();
 		
-		Carroça carroca1 = new Carroça ("amarelo mostarda", "Charrete", 2.000);
+		Carroca carroca1 = new Carroca ("amarelo mostarda", "Charrete", 2.000);
 		carroca1.qtdPessoas = 4;
 		
 		System.out.printf("A %s é da cor %s tem capacidade pra até %d pessoas e custa %.3f",carroca1.modelo,carroca1.cor,carroca1.qtdPessoas,carroca1.preco);
@@ -20,6 +20,13 @@ public class Cidades {
 		bike1.qtdPessoas = 1;
 		System.out.println();
 		System.out.printf("A bicicleta %s é da cor %s tem capacidade pra até %d pessoas e custa %.3f",bike1.modelo,bike1.cor,bike1.qtdPessoas,bike1.preco);
+		
+		System.out.println();
+		Carro car1 = new Carro ("Cinza", "Crossfox", 25.000);
+		car1.acelerar(20);
+		car1.freiar(10);
+		System.out.println(car1.vel);
+		car1.buzinar();
 	}
 
 }
