@@ -8,7 +8,15 @@ public class Motorizado extends Veiculo {
 	}
 	public String tipomotor;
 	public String tipoComb;
+	public int vel = 30;
 	
-	
-	
+		void acelerar(int acelerar){
+					vel += acelerar;
+	}
+		void freiar(int reduzir){
+					vel -= reduzir;
+	}
+		void buzinar() {
+			System.out.println("bibiiii");
+		}
 }
